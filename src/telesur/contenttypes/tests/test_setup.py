@@ -7,8 +7,6 @@ from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import login
 from plone.app.testing import setRoles
 
-from plone.browserlayer.utils import registered_layers
-
 from telesur.contenttypes.config import PROJECTNAME
 from telesur.contenttypes.testing import INTEGRATION_TESTING
 
@@ -23,11 +21,6 @@ class InstallTest(unittest.TestCase):
     def test_installed(self):
         qi = getattr(self.portal, 'portal_quickinstaller')
         self.assertTrue(qi.isProductInstalled(PROJECTNAME))
-
-    def test_browserlayer_installed(self):
-        layers = [l.getName() for l in registered_layers()]
-        self.assertTrue('ITelesurContentTypesLayer' in layers,
-                        'browser layer not installed')
 
     def test_add_permissions(self):
         permission = 'telesur.contenttypes: Add program'
@@ -49,11 +42,6 @@ class UninstallTest(unittest.TestCase):
         qi = getattr(self.portal, 'portal_quickinstaller')
         qi.uninstallProducts(products=[PROJECTNAME])
         self.assertTrue(not qi.isProductInstalled(PROJECTNAME))
-
-    def test_browserlayer_uninstalled(self):
-        layers = [l.getName() for l in registered_layers()]
-        self.assertTrue('ITelesurContentTypesLayer' not in layers,
-                        'browser layer not removed')
 
 
 def test_suite():

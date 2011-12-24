@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from five import grok
 from zope import schema
 
 from plone.directives import form
 from plone.namedfile.field import NamedBlobImage
 
 from telesur.contenttypes import _
-from telesur.contenttypes.interfaces import ITelesurContentTypesLayer
 
 
 class IProgram(form.Schema):
@@ -34,11 +32,3 @@ class IProgram(form.Schema):
                           default=u''),
             required=False,
         )
-
-
-class View(grok.View):
-    """Default view.
-    """
-    grok.context(IProgram)
-    grok.require('zope2.View')
-    grok.layer(ITelesurContentTypesLayer)
