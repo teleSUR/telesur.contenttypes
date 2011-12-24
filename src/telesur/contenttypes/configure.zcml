@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="telesur.contenttypes">
+
+    <includeDependencies package="." />
+    <i18n:registerTranslations directory="locales" />
+
+    <permission
+        id="telesur.contenttypes.AddProgram"
+        title="telesur.contenttypes: Add program"
+        />
+
+    <grok:grok package="." />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="telesur.contenttypes"
+        description="Tipos de contenido para teleSUR."
+        directory="profiles/default"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="telesur.contenttypes uninstall"
+        directory="profiles/uninstall"
+        description="Uninstall profile for the telesur.contenttypes package."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+</configure>

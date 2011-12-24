@@ -33,6 +33,7 @@ setup(name='telesur.contenttypes',
         'setuptools',
         'plone.app.dexterity>=1.1',
         'plone.app.referenceablebehavior',
+        'plone.namedfile[blobs]',
         ],
       extras_require={
         'test': ['plone.app.testing'],

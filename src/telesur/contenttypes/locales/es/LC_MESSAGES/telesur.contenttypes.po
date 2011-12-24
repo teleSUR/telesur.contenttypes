@@ -1,0 +1,50 @@
+# Héctor Velarde <hector.velarde@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: telesur.contenttypes\n"
+"POT-Creation-Date: 2011-12-24 04:13+0000\n"
+"PO-Revision-Date: 2011-12-23 22:14-0600\n"
+"Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
+"Language-Team: Spanish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: telesur.contenttypes\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.program.xml
+msgid "A program"
+msgstr "Un programa"
+
+#: telesur/contenttypes/program.py:24
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: telesur/contenttypes/program.py:17
+msgid "Image"
+msgstr "Imagen"
+
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.program.xml
+msgid "Program"
+msgstr "Programa"
+
+#: telesur/contenttypes/program.py:31
+msgid "Twitter"
+msgstr "Twitter"
+
+#: telesur/contenttypes/program.py:25
+msgid "help_email"
+msgstr ""
+
+#: telesur/contenttypes/program.py:18
+msgid "help_image"
+msgstr ""
+
+#: telesur/contenttypes/program.py:32
+msgid "help_twitter"
+msgstr ""
+

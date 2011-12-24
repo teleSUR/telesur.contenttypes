@@ -1,0 +1,51 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: telesur.contenttypes\n"
+"POT-Creation-Date: 2011-12-24 04:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: telesur.contenttypes\n"
+
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.program.xml
+msgid "A program"
+msgstr ""
+
+#: telesur/contenttypes/program.py:24
+msgid "Email"
+msgstr ""
+
+#: telesur/contenttypes/program.py:17
+msgid "Image"
+msgstr ""
+
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.program.xml
+msgid "Program"
+msgstr ""
+
+#: telesur/contenttypes/program.py:31
+msgid "Twitter"
+msgstr ""
+
+#: telesur/contenttypes/program.py:25
+msgid "help_email"
+msgstr ""
+
+#: telesur/contenttypes/program.py:18
+msgid "help_image"
+msgstr ""
+
+#: telesur/contenttypes/program.py:32
+msgid "help_twitter"
+msgstr ""
+
