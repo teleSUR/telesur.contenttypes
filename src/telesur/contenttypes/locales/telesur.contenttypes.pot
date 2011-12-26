@@ -3,8 +3,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: telesur.contenttypes\n"
-"POT-Creation-Date: 2011-12-24 04:13+0000\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-12-26 17:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "A program"
 msgstr ""
 
-#: telesur/contenttypes/program.py:24
+#: telesur/contenttypes/program.py:31
 msgid "Email"
 msgstr ""
 
@@ -33,11 +33,16 @@ msgstr ""
 msgid "Program"
 msgstr ""
 
-#: telesur/contenttypes/program.py:31
-msgid "Twitter"
+#: telesur/contenttypes/program.py:38
+msgid "Twitter account"
 msgstr ""
 
-#: telesur/contenttypes/program.py:25
+#: telesur/contenttypes/program.py:24
+msgid "URL"
+msgstr ""
+
+#. Default: "Program's host e-mail address."
+#: telesur/contenttypes/program.py:32
 msgid "help_email"
 msgstr ""
 
@@ -45,7 +50,13 @@ msgstr ""
 msgid "help_image"
 msgstr ""
 
-#: telesur/contenttypes/program.py:32
+#. Default: "Program's Twitter account."
+#: telesur/contenttypes/program.py:39
 msgid "help_twitter"
+msgstr ""
+
+#. Default: "Program's page URL in video system."
+#: telesur/contenttypes/program.py:25
+msgid "help_url"
 msgstr ""
 

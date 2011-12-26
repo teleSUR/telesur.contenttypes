@@ -8,8 +8,9 @@ from plone.namedfile.field import NamedBlobImage
 from telesur.contenttypes import _
 
 
+# TODO: validar campos
 class IProgram(form.Schema):
-    """A program.
+    """A TV show.
     """
 
     image = NamedBlobImage(
@@ -19,16 +20,23 @@ class IProgram(form.Schema):
         required=False,
         )
 
+    url = schema.TextLine(
+            title=_(u'URL'),
+            description=_(u'help_url',
+                          default=u"Program's page URL in video system."),
+            required=False,
+        )
+
     email = schema.TextLine(
             title=_(u'Email'),
             description=_(u'help_email',
-                          default=u''),
+                          default=u"Program's host e-mail address."),
             required=False,
         )
 
     twitter = schema.TextLine(
-            title=_(u'Twitter'),
+            title=_(u'Twitter account'),
             description=_(u'help_twitter',
-                          default=u''),
+                          default=u"Program's Twitter account."),
             required=False,
         )

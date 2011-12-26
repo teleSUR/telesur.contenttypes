@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: telesur.contenttypes\n"
-"POT-Creation-Date: 2011-12-24 04:13+0000\n"
-"PO-Revision-Date: 2011-12-23 22:14-0600\n"
+"POT-Creation-Date: 2011-12-26 17:00+0000\n"
+"PO-Revision-Date: 2011-12-26 10:58-0600\n"
 "Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
 "Language-Team: Spanish <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "A program"
 msgstr "Un programa"
 
-#: telesur/contenttypes/program.py:24
+#: telesur/contenttypes/program.py:31
 msgid "Email"
 msgstr "Correo electrónico"
 
@@ -32,19 +32,33 @@ msgstr "Imagen"
 msgid "Program"
 msgstr "Programa"
 
-#: telesur/contenttypes/program.py:31
-msgid "Twitter"
-msgstr "Twitter"
+#: telesur/contenttypes/program.py:38
+msgid "Twitter account"
+msgstr "Cuenta de Twitter"
 
-#: telesur/contenttypes/program.py:25
+#: telesur/contenttypes/program.py:24
+msgid "URL"
+msgstr "URL"
+
+#. Default: "Program's host e-mail address."
+#: telesur/contenttypes/program.py:32
+#, fuzzy
 msgid "help_email"
-msgstr ""
+msgstr "Dirección de correo electrónico para contactar al conductor del programa."
 
 #: telesur/contenttypes/program.py:18
 msgid "help_image"
 msgstr ""
 
-#: telesur/contenttypes/program.py:32
+#. Default: "Program's Twitter account."
+#: telesur/contenttypes/program.py:39
+#, fuzzy
 msgid "help_twitter"
-msgstr ""
+msgstr "Cuenta de Twitter del programa."
+
+#. Default: "Program's page URL in video system."
+#: telesur/contenttypes/program.py:25
+#, fuzzy
+msgid "help_url"
+msgstr "URL de la página del programa en el sistema de video."
 

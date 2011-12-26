@@ -21,6 +21,10 @@ Functional test:
     >>> browser.getLink('Program').click()
     >>> browser.getControl('Title').value = 'Dossier'
     >>> browser.getControl('Description').value = 'Acontecimientos en pleno desarrollo.'
+    >>> # TODO: cargar imagen
+    >>> browser.getControl('URL').value = 'http://multimedia.telesurtv.net/programas/dossier/'
+    >>> browser.getControl('Email').value = 'walter@dossieronline.com'
+    >>> browser.getControl('Twitter account').value = '@WalterDossier'
     >>> browser.getControl('Save').click()
     >>> 'Item created' in browser.contents
     True
