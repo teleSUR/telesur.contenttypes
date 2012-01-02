@@ -28,6 +28,15 @@ class InstallTest(unittest.TestCase):
         roles = [r['name'] for r in roles if r['selected']]
         self.assertEqual(roles, ['Contributor', 'Manager', 'Owner', 'Site Administrator'])
 
+    def test_link_workflow_changed(self):
+        setRoles(self.portal, TEST_USER_ID, ['Manager'])
+        self.portal.invokeFactory('telesur.contenttypes.program', 'obj')
+        obj = self.portal['obj']
+        workflow_tool = self.portal.portal_workflow
+        chain = workflow_tool.getChainForPortalType(obj.portal_type)
+        self.assertEqual(len(chain), 1)
+        self.assertEqual(chain[0], 'one_state_workflow')
+
 
 class UninstallTest(unittest.TestCase):
 
