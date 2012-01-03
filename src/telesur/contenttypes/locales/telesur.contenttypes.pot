@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-12-26 17:00+0000\n"
+"POT-Creation-Date: 2012-01-03 19:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,8 +21,12 @@ msgstr ""
 msgid "A program"
 msgstr ""
 
-#: telesur/contenttypes/program.py:31
+#: telesur/contenttypes/program.py:39
 msgid "Email"
+msgstr ""
+
+#: telesur/contenttypes/program.py:32
+msgid "Host"
 msgstr ""
 
 #: telesur/contenttypes/program.py:17
@@ -33,7 +37,7 @@ msgstr ""
 msgid "Program"
 msgstr ""
 
-#: telesur/contenttypes/program.py:38
+#: telesur/contenttypes/program.py:46
 msgid "Twitter account"
 msgstr ""
 
@@ -41,22 +45,36 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#. Default: "Program's host e-mail address."
-#: telesur/contenttypes/program.py:32
+#: telesur/contenttypes/program.py:54
+msgid "Widget"
+msgstr ""
+
+#. Default: "Email address of the host."
+#: telesur/contenttypes/program.py:40
 msgid "help_email"
+msgstr ""
+
+#. Default: "The name of the host."
+#: telesur/contenttypes/program.py:33
+msgid "help_host"
 msgstr ""
 
 #: telesur/contenttypes/program.py:18
 msgid "help_image"
 msgstr ""
 
-#. Default: "Program's Twitter account."
-#: telesur/contenttypes/program.py:39
+#. Default: "Twitter account associated with the program."
+#: telesur/contenttypes/program.py:47
 msgid "help_twitter"
 msgstr ""
 
-#. Default: "Program's page URL in video system."
+#. Default: "URL of the frontpage in the video system."
 #: telesur/contenttypes/program.py:25
 msgid "help_url"
+msgstr ""
+
+#. Default: "URL of the widget that shows the most recent programs."
+#: telesur/contenttypes/program.py:55
+msgid "help_widget"
 msgstr ""
 
