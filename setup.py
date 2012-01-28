@@ -8,7 +8,7 @@ version = '1.0'
 setup(name='telesur.contenttypes',
       version=version,
       description="Tipos de contenido para teleSUR",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
@@ -19,7 +19,7 @@ setup(name='telesur.contenttypes',
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         ],
-      keywords='plone dexterity',
+      keywords='plone dexterity contenttypes teleSUR',
       author='Héctor Velarde',
       author_email='hector.velarde@gmail.com',
       url='https://github.com/desarrollotv/telesur.contenttypes',
