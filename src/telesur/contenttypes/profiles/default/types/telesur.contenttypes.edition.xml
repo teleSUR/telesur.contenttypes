@@ -4,27 +4,24 @@
    i18n:domain="telesur.contenttypes">
 
  <!-- Basic metadata -->
- <property name="title" i18n:translate="">Program</property>
- <property name="description" i18n:translate="">A program</property>
+ <property name="title" i18n:translate="">Edition</property>
+ <property name="description" i18n:translate="">A program edition</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
  <property name="allow_discussion">False</property>
- <property name="global_allow">True</property>
+ <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
- <property name="allowed_content_types">
-  <element value="telesur.contenttypes.edition" />
- </property>
+ <property name="allowed_content_types" />
 
   <!-- schema and class used for content items -->
- <property name="schema">telesur.contenttypes.program.IProgram</property>
- <property name="klass">plone.dexterity.content.Container</property>
+ <property name="schema">telesur.contenttypes.edition.IEdition</property>
+ <property name="klass">plone.dexterity.content.Item</property>
 
- <property name="add_permission">telesur.contenttypes.AddProgram</property>
+ <property name="add_permission">telesur.contenttypes.AddEdition</property>
 
  <!-- enabled behaviors -->
  <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
-     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
  </property>
 
  <!-- View information -->
