@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: telesur.contenttypes\n"
-"POT-Creation-Date: 2012-01-03 19:27+0000\n"
-"PO-Revision-Date: 2012-01-03 13:29-0600\n"
+"POT-Creation-Date: 2012-02-04 04:25+0000\n"
+"PO-Revision-Date: 2012-02-03 23:56-0400\n"
 "Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
 "Language-Team: Spanish <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 msgid "A program"
 msgstr "Un programa"
 
-#: telesur/contenttypes/program.py:39
-msgid "Email"
-msgstr "Correo electrónico"
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.edition.xml
+msgid "A program edition"
+msgstr "Una edición de un programa"
 
-#: telesur/contenttypes/program.py:32
-msgid "Host"
-msgstr "Conductor"
+#: telesur/contenttypes/profiles/default/types/telesur.contenttypes.edition.xml
+msgid "Edition"
+msgstr "Edición"
 
-#: telesur/contenttypes/program.py:17
+#: telesur/contenttypes/edition.py:15
 msgid "Image"
 msgstr "Imagen"
 
@@ -36,46 +36,16 @@ msgstr "Imagen"
 msgid "Program"
 msgstr "Programa"
 
-#: telesur/contenttypes/program.py:46
-msgid "Twitter account"
-msgstr "Cuenta de Twitter"
-
-#: telesur/contenttypes/program.py:24
-msgid "URL"
-msgstr "URL"
-
-#: telesur/contenttypes/program.py:54
+#: telesur/contenttypes/program.py:16
 msgid "Widget"
 msgstr "Widget"
 
-#. Default: "Email address of the host."
-#: telesur/contenttypes/program.py:40
-msgid "help_email"
-msgstr "Dirección de correo electrónico del conductor del programa."
-
-#. Default: "The name of the host."
-#: telesur/contenttypes/program.py:33
-msgid "help_host"
-msgstr "El nombre del conductor del programa."
-
-#: telesur/contenttypes/program.py:18
+#: telesur/contenttypes/edition.py:16
 msgid "help_image"
-msgstr ""
-
-#. Default: "Twitter account associated with the program."
-#: telesur/contenttypes/program.py:47
-#, fuzzy
-msgid "help_twitter"
-msgstr "Cuenta de Twitter del programa."
-
-#. Default: "URL of the frontpage in the video system."
-#: telesur/contenttypes/program.py:25
-#, fuzzy
-msgid "help_url"
-msgstr "URL de la página del programa en el sistema de video."
+msgstr "La imagen promocional de la edición del programa."
 
 #. Default: "URL of the widget that shows the most recent programs."
-#: telesur/contenttypes/program.py:55
+#: telesur/contenttypes/program.py:17
 msgid "help_widget"
 msgstr "URL del widget que muestra los programas más recientes."
 
