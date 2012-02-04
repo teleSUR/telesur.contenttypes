@@ -99,6 +99,11 @@
     #thumbs a.button:hover {
         color:white !important;
     }
+
+    #widget {
+        margin-top: 20px;
+    }
+
     </style>
     </metal:block>
 </head>
@@ -155,6 +160,10 @@
 	        items: '#tools'
         }).navigator().data("scrollable");
         </script>
+
+        <iframe id="widget" width="1024" height="240" src=""
+                tal:condition="context/widget|nothing"
+                tal:attributes="src context/widget" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
