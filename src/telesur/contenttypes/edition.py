@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from zope import schema
-
 from plone.directives import form
 from plone.namedfile.field import NamedBlobImage
 

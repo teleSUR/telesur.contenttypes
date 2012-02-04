@@ -13,9 +13,8 @@ class IProgram(form.Schema):
     """
 
     widget = schema.TextLine(
-            title=_(u'Widget'),
-            description=_(u'help_widget',
-                          default=u"URL of the widget that shows the most "
-                                   "recent programs."),
-            required=False,
+        title=_(u'Widget'),
+        description=_(u'help_widget',
+                      default=u"URL of the widget that shows the most recent programs."),
+        required=False,
         )

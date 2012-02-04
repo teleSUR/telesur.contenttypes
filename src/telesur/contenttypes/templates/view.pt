@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="es"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="telesur.contenttypes">
+
+<head>
+    <metal:block fill-slot="style_slot">
+    <script src="++resource++telesur.contenttypes/jquery.tools.min.js"></script>
+    <style>
+    body {padding:0;}
+
+    img {
+	    border:0;		
+    }
+
+    #scroll {
+	    position:relative;
+	    height:;
+	    overflow:hidden;
+	    border:1px solid #ddd;
+	    width:1024px;
+	    height:587px;
+	    -moz-border-radius:5px;
+	    -webkit-border-radius:5px;
+    }
+
+    #tools {
+	    width:9999em;
+	    position:absolute;
+	    height:400px;
+    }
+
+    .tool {
+	    float:left;
+	    width:1024px;
+	    height:500px;
+	    text-align:center;
+    }
+
+    .details {
+	    font-size:18px;
+	    color:#555;
+	    background-color:transparent;
+	    padding:5px 148px;
+    }
+
+
+    #thumbs {
+	    background:none;
+	    height:58px;
+	    width:1024px;
+    }
+
+    .t {
+	    padding:0 !important;
+	    border:0 !important;
+    }
+
+    .t a {
+	    background:none;
+	    margin-left:10px;
+	    display:block;
+	    width:auto;
+	    float:left;
+	    height:58px;
+	    cursor:pointer;
+    }
+
+    .t a.active {
+	    cursor:default !important;
+    }
+
+    .navi {
+        background:url("++resource++telesur.contenttypes/button-left.png") no-repeat scroll left 0 transparent;
+        float:left;
+        font-size:18px;
+        font-weight:bold;
+        line-height:58px;
+        padding-right:15px;
+    }
+
+    .right {
+        background:url("++resource++telesur.contenttypes/button-right.png") no-repeat scroll right 0 transparent;
+        height:58px;
+    }
+
+    a.button {
+        background:url("++resource++telesur.contenttypes/button-center.png") repeat scroll 0 0 transparent;
+        margin-left:24px;
+        margin-right:5px;
+        padding-left:10px;
+        padding-right:29px;
+        text-align:center;
+    }
+
+    #thumbs a.button:hover {
+        color:white !important;
+    }
+    </style>
+    </metal:block>
+</head>
+
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading" tal:content="context/title" />
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <p class="documentDescription" tal:content="context/description" />
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+
+        <tal:block define="editions view/editions" >
+        <div id="scroll">
+        	<div id="tools">
+		        <div class="tool" tal:repeat="edition editions" tal:condition="editions">
+
+                    <img tal:define="obj edition/getObject;
+                                     absolute_url obj/absolute_url;
+                                     filename obj/image/filename"
+                         tal:attributes="src string:${absolute_url}/@@download/image/${filename}" />
+
+			        <div class="details">
+				        <div tal:replace="edition/Description" />
+			        </div>
+
+		        </div>
+            </div>
+        </div>
+
+	    <br clear="all" />
+
+	    <div id="thumbs" class="t">
+
+	        <div class="navi" tal:repeat="edition editions" tal:condition="editions">
+	            <div class="right">
+    			    <a class="button" tal:content="edition/Title"></a>
+	            </div>
+		    </div>
+
+	    </div>
+        </tal:block>
+
+        <script type="text/javascript">
+        var api = $("#scroll").scrollable({
+	        items: '#tools'
+        }).navigator().data("scrollable");
+        </script>
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
+</body>
+</html>
