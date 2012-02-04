@@ -146,7 +146,7 @@
 
 	    <div id="thumbs" class="t">
 
-	        <div class="navi" tal:repeat="edition editions" tal:condition="editions">
+	        <div class="navi" tal:repeat="edition editions" tal:condition="python:editions and len(editions) > 1">
 	            <div class="right">
     			    <a class="button" tal:content="edition/Title"></a>
 	            </div>
