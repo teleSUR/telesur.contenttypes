@@ -61,6 +61,12 @@ class IntegrationTest(unittest.TestCase):
         self.assertEqual(len(chain), 1)
         self.assertEqual(chain[0], 'one_state_workflow')
 
+    def test_program_selectable_as_folder_default_view(self):
+        self.folder.invokeFactory('telesur.contenttypes.program', 'p1')
+        self.folder.setDefaultPage('p1')
+
+        self.failUnlessEqual(self.folder.default_page, 'p1')
+
 
 def test_suite():
     return unittest.defaultTestLoader.loadTestsFromName(__name__)
