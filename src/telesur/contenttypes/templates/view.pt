@@ -8,7 +8,7 @@
 
 <head>
     <metal:block fill-slot="style_slot">
-    <script src="++resource++telesur.contenttypes/jquery.tools.min.js"></script>
+
     <style>
     body {padding:0;}
 
@@ -73,7 +73,7 @@
 	    cursor:default !important;
     }
 
-    .navi {
+    .navi-scroll {
         background:url("++resource++telesur.contenttypes/button-left.png") no-repeat scroll left 0 transparent;
         float:left;
         font-size:18px;
@@ -146,7 +146,7 @@
 
 	    <div id="thumbs" class="t">
 
-	        <div class="navi" tal:repeat="edition editions" tal:condition="editions">
+	        <div class="navi-scroll" tal:repeat="edition editions" tal:condition="editions">
 	            <div class="right">
     			    <a class="button" tal:content="edition/Title"></a>
 	            </div>
@@ -155,10 +155,13 @@
 	    </div>
         </tal:block>
 
+        <script src="++resource++telesur.contenttypes/jquery.tools.min.js"></script>
         <script type="text/javascript">
-        var api = $("#scroll").scrollable({
-	        items: '#tools'
-        }).navigator().data("scrollable");
+        $(document).ready(function(){
+            var api = $("#scroll").scrollable({
+	            items: '#tools'
+            }).navigator({navi:'.navi-scroll'}).data("scrollable");
+        });
         </script>
 
         <iframe id="widget" width="1024" height="240" src=""
@@ -166,7 +169,6 @@
                 tal:attributes="src context/widget" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
-
     </tal:main-macro>
 </metal:main>
 </body>
