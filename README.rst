@@ -24,6 +24,21 @@ Descargas
 
 Usted puede encontrar la versión de desarrollo del paquete ``telesur.contenttypes`` en el `repositorio desarrollotv`_ en Github.com.
 
+
+Autor(es) Original(es)
+======================
+
+* Héctor Velarde aka hvelarde
+
+Colaboraciones impresionantes
+=============================
+
+* Franco Pellegrini aka frapell
+
+* Leonardo J .Caballero G. aka macagua
+
+Para una lista actualizada de todo los colaboradores visite: https://github.com/desarrollotv/telesur.contenttypes/contributors
+
 .. _sitio Web de teleSUR: http://telesurtv.net/
 .. _Plone: http://plone.org/
 .. _repositorio desarrollotv: https://github.com/desarrollotv/telesur.contenttypes
