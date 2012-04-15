@@ -14,7 +14,7 @@ class IProgram(form.Schema):
     """A TV show.
     """
 
-    widget = schema.TextLine(
+    program_widget = schema.TextLine(
         title=_(u'Widget'),
         description=_(u'help_widget',
                       default=u"URL of the widget that shows the most recent programs."),
@@ -24,4 +24,3 @@ class IProgram(form.Schema):
 
 class Program(dexterity.Container):
     grok.implements(IProgram, INonStructuralFolder)
-    

@@ -13,7 +13,7 @@
     body {padding:0;}
 
     img {
-	    border:0;		
+	    border:0;
     }
 
     #scroll {
@@ -100,7 +100,7 @@
         color:white !important;
     }
 
-    #widget {
+    #program_widget {
         margin-top: 20px;
     }
 
@@ -162,9 +162,9 @@
         });
         </script>
 
-        <iframe id="widget" width="1024" height="240" src=""
-                tal:condition="context/widget|nothing"
-                tal:attributes="src context/widget" />
+        <iframe id="program_widget" width="1024" height="240" src=""
+                tal:condition="context/program_widget|nothing"
+                tal:attributes="src context/program_widget" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
     </tal:main-macro>
