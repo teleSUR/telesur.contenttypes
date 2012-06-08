@@ -22,7 +22,7 @@ Usted puede leer el archivo ``INSTALL.txt`` dentro del directorio ``docs`` de es
 Descargas
 =========
 
-Usted puede encontrar la versión de desarrollo del paquete ``telesur.contenttypes`` en el `repositorio desarrollotv`_ en Github.com.
+Usted puede encontrar la versión de desarrollo del paquete ``telesur.contenttypes`` en el `repositorio teleSUR`_ en Github.com.
 
 
 Autor(es) Original(es)
@@ -37,9 +37,9 @@ Colaboraciones impresionantes
 
 * Leonardo J .Caballero G. aka macagua
 
-Para una lista actualizada de todo los colaboradores visite: https://github.com/desarrollotv/telesur.contenttypes/contributors
+Para una lista actualizada de todo los colaboradores visite: https://github.com/teleSUR/telesur.contenttypes/contributors
 
 .. _sitio Web de teleSUR: http://telesurtv.net/
 .. _Plone: http://plone.org/
-.. _repositorio desarrollotv: https://github.com/desarrollotv/telesur.contenttypes
+.. _repositorio teleSUR: https://github.com/teleSUR/telesur.contenttypes
 
