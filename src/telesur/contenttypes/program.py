@@ -5,7 +5,6 @@ from zope import schema
 from five import grok
 from plone.directives import dexterity, form
 
-from Products.CMFPlone.interfaces import INonStructuralFolder
 from telesur.contenttypes import _
 
 
@@ -23,4 +22,5 @@ class IProgram(form.Schema):
 
 
 class Program(dexterity.Container):
-    grok.implements(IProgram, INonStructuralFolder)
+    """
+    """
